@@ -1,0 +1,13 @@
+{
+     "mul": "zs_op2",
+     "imul" : "zs_op2",
+     "mulps" : "zs_op2",
+     "mulpd" : "zs_op2",
+
+     "add" : "zs_op2",
+     "adc" : "zs_op2",
+     "inc" : "zs_op2",
+     "xadd" : "zs_op2",
+     "adcx" : "zs_op2",
+     "adox" : "zs_op2"
+}

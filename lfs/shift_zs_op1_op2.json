@@ -1,0 +1,6 @@
+{
+     "shl" : "zs_op1_op2",
+     "shr" : "zs_op1_op2",
+     "sal" : "zs_op1_op2",
+     "sar" : "zs_op2"
+}

@@ -1,0 +1,6 @@
+{
+     "mul": "zs_op2",
+     "imul" : "zs_op2",
+     "mulps" : "zs_op2",
+     "mulpd" : "zs_op2"
+}

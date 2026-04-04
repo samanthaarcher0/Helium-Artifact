@@ -1,0 +1,6 @@
+{
+     "mul": "ds_op2_1bit",
+     "imul" : "ds_op2_1bit",
+     "mulps" : "ds_op2_1bit",
+     "mulpd" : "ds_op2_1bit"
+}

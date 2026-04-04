@@ -1,0 +1,8 @@
+scipy
+matplotlib
+capstone
+angr
+claripy
+z3-solver
+numpy
+unicorn
