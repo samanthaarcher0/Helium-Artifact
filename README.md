@@ -1,6 +1,6 @@
 # Description
 
-This artifact demonstrates leakage quantification with Helium, using both TracerSym and TracerSim to compute pointwise maximal leakage (PML) tail-bound security guarantees for different programs. The artifact provides a Docker image containing all required dependencies (Python 3 and Python packages, Intel Pin, etc.) and scripts to reproduce all four case studies in the paper. The artifact can be run on any x86-64 machine with Docker, Git, and Bash support, as well as at least 32 GB of RAM and 8 GB of disk space. 
+This artifact demonstrates leakage quantification with Helium, using both TracerSym and TracerSim to compute pointwise maximal leakage (PML) tail-bound security guarantees for multiple programs. The artifact provides a Dockerfile that builds a container image containing all required dependencies (including Python 3, the necessary Python packages, and Intel Pin), along with scripts to reproduce all four case studies presented in the paper. The artifact can be executed on any x86_64 machine with Docker, Git, and Bash support, and requires at least 32 GB of RAM and 8 GB of available disk space.
 
 # Installation
 
