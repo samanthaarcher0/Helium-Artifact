@@ -35,10 +35,9 @@ COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Unzip Intel Pin and build pin tool
-WORKDIR /helium/Leakage-Quantification
 RUN wget https://software.intel.com/sites/landingpage/pintool/downloads/pin-external-4.1-99687-gd9b8f822c-gcc-linux.tar.gz
 RUN tar -xvf pin-external-4.1-99687-gd9b8f822c-gcc-linux.tar.gz
-ENV PIN_ROOT=/helium/Leakage-Quantification/pin-external-4.1-99687-gd9b8f822c-gcc-linux
+ENV PIN_ROOT=/helium/pin-external-4.1-99687-gd9b8f822c-gcc-linux
 RUN cd pin-leakage_function_simulation && \
     mkdir obj-intel64 && \
     make obj-intel64/TracerSim.so
