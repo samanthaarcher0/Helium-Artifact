@@ -23,28 +23,28 @@ All four case studies, along with their corresponding outputs and figures, can b
 This case study evaluates cryptographic MAC Poly1305 under two multiplication μobs functions, zero-skip and digit-serial multiplication. It takes less than 6 minutes to run. The outputs can be found in results_case_study_I directory. To run:
 ```
 ### In the Docker container ###
-$ ./run_case_study_I.sh
+./run_case_study_I.sh
 ```
+
 Outputs:
 - Poly1305_tail_bound_guarantees.log: The log contains the two tail-bound guarantees that are discussed in the text of VII-A, one for Poly1305 under zero-skip multiplication and the other for Poly1305 under digit-serial multiplication.
 - Figure_7_poly1305_ep_delt_under_two_lfs.pdf: Figure 7 shows all possible tail-bound guarantees of Poly1305 under the two multiply optimizations.
 
 ## Case Study II
 This case study evaluates the Firefox convolution SVG filter under the same two multiplication μobs functions from Case Study I. It takes less than a minute to run. The outputs can be found in the results _case_study_II directory. To run:
-
 ```
 ### In the Docker container ###
-$ ./run_case_study_II.sh
+./run_case_study_II.sh
 ```
+
 Generated outputs:
-• Table_IV_convolve_tail_bound_guarantees.log: Table IV with tail-bound guarantees of Firefox’s convolution under zero-skip and digit-serial multiplication μobs functions.
+- Table_IV_convolve_tail_bound_guarantees.log: Table IV with tail-bound guarantees of Firefox’s convolution under zero-skip and digit-serial multiplication μobs functions.
 
 ## Case Study III
 This case study evaluates the scalability of TracerSym, measuring the increase in runtime and number of SMT queries as the number of instrumented instructions and the number of μobs per μobs function increases. It takes 1.5 hours to run. The outputs can be found in results_case_study_III directory. To run:
-
 ```
 ### In the Docker container ###
-$ ./run_case_study_III.sh
+./run_case_study_III.sh
 ```
 
 Generated outputs:
@@ -52,10 +52,9 @@ Generated outputs:
 
 ## Case Study IV
 This last case study computes PML tail-bound guarantees using our simulation-based methodology, TracerSim, for four cryptographic programs studied in a recent work [37]. This case study takes less than 6 hours to run. Note, as TracerSim runs Monte Carlo simulations, the exact tail-bound guarantees will differ slightly between runs. However, all values should be reasonably close to those reported in §VII-D. Further, due to slight updates in our tracing Pin tool, the table’s instruction counts differ slightly, but do not meaningfully change the leakage guarantees. The outputs can be found in results_case_study_IV directory. To run:
-
 ```
 ### In the Docker container ###
-$ ./run_case_study_IV.sh
+./run_case_study_IV.sh
 ```
 
 Generated outputs:
