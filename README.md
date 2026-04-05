@@ -12,7 +12,8 @@ Build the Docker image:
 docker build -f Dockerfile -t helium_artifact .
 ```
 After the image has been successfully built, launch the container:
-```docker run -it helium_artifact
+```
+docker run -it helium_artifact
 ```
 
 # Run evaluation
