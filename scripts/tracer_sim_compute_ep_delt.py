@@ -264,6 +264,9 @@ def main(args):
 
     if len(monte_carlo_freqs) == 1:
         one_minus_delta_low = 1 - 3/N
+    elif delt < 0.5*N:
+        print(f"All \u03BCtraces have high leakage")
+        return
     else:
         one_minus_delta_low, one_minus_delta_high = clopper_pearson(delt, N)
         
