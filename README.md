@@ -56,7 +56,7 @@ Generated outputs:
 - `Figure_8_scalability_eval.pdf`: Figure 8 showing TracerSym’s runtime and number of SMT queries with increasing numbers of instrumented instructions and increasing the number of μobs per μobs function, as described in §VII-C.
 
 ## Case Study IV
-This last case study computes PML tail-bound guarantees using our simulation-based methodology, TracerSim, for four cryptographic programs studied in a recent work [37]. This case study takes less than 6 hours to run. Note, as TracerSim runs Monte Carlo simulations, the exact tail-bound guarantees will differ slightly between runs. However, all values should be reasonably close to those reported in §VII-D. Further, due to slight updates in our tracing Pin tool, the table’s instruction counts differ slightly, but do not meaningfully change the leakage guarantees. The outputs can be found in `results_case_study_IV` directory. To run:
+This last case study computes PML tail-bound guarantees using our simulation-based methodology, TracerSim, for four cryptographic programs. This case study takes less than 6 hours to run. Note, as TracerSim runs Monte Carlo simulations, the exact tail-bound guarantees will differ slightly between runs. However, all values should be reasonably close to those reported in §VII-D. Further, due to slight updates in our tracing Pin tool, the table’s instruction counts differ slightly, but do not meaningfully change the leakage guarantees. The outputs can be found in `results_case_study_IV` directory. To run:
 ```
 ### In the Docker container ###
 ./run_case_study_IV.sh
