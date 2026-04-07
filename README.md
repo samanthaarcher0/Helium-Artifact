@@ -18,7 +18,7 @@ After the image has been successfully built, launch the container:
 docker run -it helium_artifact
 ```
 
-# Run evaluation
+# Evaluation
 All four case studies, along with their corresponding outputs and figures, can be reproduced as described in this section. In total, the full evaluation requires approximately 10 hours on a dual-socket server equipped with two Intel Xeon Gold 6226R CPUs (2.90 GHz). The system has 32 physical cores with 2-way simultaneous multithreading (64 logical CPUs) and 512 GB of RAM. However, the experiments use at most 32 GB of memory. All workloads are provided as precompiled binaries; no additional build step is required.
 
 ## Case Study I
