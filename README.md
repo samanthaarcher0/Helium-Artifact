@@ -63,5 +63,5 @@ This last case study computes PML tail-bound guarantees using our simulation-bas
 ```
 
 Generated outputs:
-- `Table_VI_case_study_4_results.log`: Table VI showing tail-bound guarantees for four programs and categories of μobs functions evaluated in prior work [37].
+- `Table_VI_case_study_4_results.log`: Table VI showing tail-bound guarantees for four programs and categories of μobs functions.
 - `Table_VII_ed25519_leakage_by_function.log`: Table VII showing the tail-bound guarantees per function for one program, Ed25519, and one category of μobs functions.
