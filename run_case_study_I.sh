@@ -6,7 +6,8 @@ INSN_LABEL="mul"
 SCRIPT="angr-leakage-function-insertion/symbolic_leakage_function_paths.py"
 RESULTS_DIR="results_case_study_I"
 PYTHON="python3"
-RESULTS_OUTPUT=${RESULTS_DIR}/"Poly1305_tail_bound_guarantees.log"
+RESULTS_OUTPUT="${RESULTS_DIR}/Poly1305_tail_bound_guarantees.log"
+RUNTIME_OUTPUT="${RESULTS_DIR}/Table_III_part1_Poly1305_runtime_stats.log"
 
 log() { echo "[$(date '+%H:%M:%S')] $*"; }
 
@@ -28,3 +29,6 @@ log "Wrote tail-bound guarantees for Poly1305 in ${RESULTS_OUTPUT}"
 
 log "Generating plot"
 python3 scripts/plot_pml_results.py ${RESULTS_DIR}/results_${PROG_LABEL}_${INSN_LABEL}_${LF2}_latest/results.log ${RESULTS_DIR}/results_${PROG_LABEL}_${INSN_LABEL}_${LF1}_latest/results.log ${RESULTS_DIR}/Figure_7_poly1305_ep_delt_under_two_lfs.pdf
+
+log "Generate runtime stats"
+python3 scripts/tracer_sym_runtime_parser.py ${RESULTS_DIR}/${PROG_LABEL}_${INSN_LABEL}_${LF1}.log ${RESULTS_DIR}/${PROG_LABEL}_${INSN_LABEL}_${LF2}.log > ${RUNTIME_OUTPUT} 
